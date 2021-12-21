@@ -11,3 +11,8 @@ for i in tmp:
         continue
     else:
         possible_ids.append(i)
+
+for i in possible_ids:
+    if "view" in i:
+        possible_ids.remove(i)
+    
