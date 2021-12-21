@@ -24,3 +24,5 @@ if len(possible_ids)!=1:
 ID = possible_ids[0]
 
 DIRECT_LINK = "https://drive.google.com/uc?export=download&id=" + ID
+
+print(DIRECT_LINK)
