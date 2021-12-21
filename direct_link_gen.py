@@ -7,7 +7,7 @@ tmp = SHARED_LINK.split(sep="/")
 possible_ids = []
 
 for i in tmp:
-    if i in ["https:","http:","drive.google.com","drive","google","view"]:
+    if i in ["https:","http:","drive.google.com","drive","google","view","file","d"]:
         continue
     else:
         possible_ids.append(i)
@@ -15,4 +15,3 @@ for i in tmp:
 for i in possible_ids:
     if "view" in i:
         possible_ids.remove(i)
-    
