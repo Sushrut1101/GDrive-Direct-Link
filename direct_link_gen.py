@@ -16,5 +16,9 @@ for i in possible_ids:
     if "view" in i:
         possible_ids.remove(i)
 
-if len(possible_ids)==1:
-    ID = possible_ids[0]
+if len(possible_ids)!=1:
+    for i in possible_ids:
+        if len(i)==0:
+            possible_ids.remove(i)
+
+ID = possible_ids[0]
